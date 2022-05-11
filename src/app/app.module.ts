@@ -20,9 +20,10 @@ import { NavComponent } from './nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { FilterTableComponent } from './filter-table/filter-table.component';
 
 @NgModule({
-  declarations: [AppComponent, PannelComponent, HomeComponent, NavComponent],
+  declarations: [AppComponent, PannelComponent, HomeComponent, NavComponent, FilterTableComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
