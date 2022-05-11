@@ -39,7 +39,9 @@ export class FilterTableComponent {
   }
   detailElements(element: PeriodicElement) {
     this.dataSource.filteredData.forEach((e) =>
-      e.name !== element.name ? (e.isClicked = false) : (e.isClicked = true)
+      e.position !== element.position
+        ? (e.isClicked = false)
+        : (e.isClicked = true)
     );
     this.element = element;
   }
@@ -47,6 +49,8 @@ export class FilterTableComponent {
   clearSelection() {
     this.element = undefined;
     this.dataSource.filteredData.forEach((e) => (e.isClicked = false));
+    this.dataSource.filter = '';
+    this.formControl.reset();
   }
 
   get results() {

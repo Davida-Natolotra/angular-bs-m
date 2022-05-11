@@ -107,7 +107,7 @@ export const ELEMENT_DATA: PeriodicElement[] = [
     isClicked: false,
   },
   {
-    position: 2,
+    position: 11,
     name: 'Helium',
     weight: 4.0026,
     symbol: 'He',
